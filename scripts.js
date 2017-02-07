@@ -1,4 +1,4 @@
-const test = document.querySelector('.test');
+const test = document.querySelector('.background');
 const testH1 = test.querySelector('span');
 
 function changeTestColor() {
