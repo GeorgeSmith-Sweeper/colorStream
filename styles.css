@@ -1,17 +1,64 @@
 body {
   margin: 0;
   display: flex;
-  background: linear-gradient(195deg, #9d3f2c 0%, #301099 28%, #7e41e8 100%);
+  background: linear-gradient(120deg, #9d3f2c 0%, #301099 28%, #7e41e8 100%);
   height: 100vh;
   text-align: center;
-  align-content: center;
   justify-content: center;
   align-items: center;
 }
 
-span {
-  font-size: 40px;
+/*span {
+  display: flex;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
   color: white;
   text-align: center;
 }
+*/
+/*font-family: 'Open Sans', sans-serif*/
 
+span {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
