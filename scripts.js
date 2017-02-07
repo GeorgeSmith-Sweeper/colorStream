@@ -1,9 +1,22 @@
-const test = document.querySelector('.background');
-const testH1 = test.querySelector('span');
+const main = document.querySelector('.main');
+const button = main.querySelector('.button');
 
-function changeTestColor() {
-  console.log(`you clicked the test div text`);
+function displayStyles() {
+  console.log(`I will eventually display the page styles`);
 }
 
+
+/* revist color flash tomorrow */
+function changeButtonColor() {
+  let clicked = false;
+  if (clicked) {
+    button.style.backgroundColor = 'yellow'
+    clicked = true;
+  }
+}
+
+
+
 // event listeners
-testH1.addEventListener('click', changeTestColor)
+button.addEventListener('click', displayStyles);
+button.addEventListener('click', changeButtonColor);
