@@ -5,6 +5,18 @@ function displayStyles() {
   console.log(`I will eventually display the page styles`);
 }
 
+function createRandomColor() {
+  let letters = '01234566789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)]
+  }
+  return color;
+}
+
+function changeGradientHourly() {
+
+}
 
 /* revist color flash tomorrow */
 function changeButtonColor() {
