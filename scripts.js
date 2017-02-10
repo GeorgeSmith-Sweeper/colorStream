@@ -19,6 +19,9 @@ function randomColor() {
   return color;
 }
 
+function randomNumTo100() {
+
+}
 // Applies the random color to the 'body'
 function applyRandomColor() {
 
