@@ -25,16 +25,12 @@ p {
   text-align: center;
 }
 
-.color-tester {
-  height: 200px;
-  width: 200px;
-  border: 5px solid;
-}
 .button {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   border: solid;
   color: white;
+  margin: 15px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
