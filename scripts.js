@@ -1,10 +1,7 @@
 const main = document.querySelector('.main');
-const button = main.querySelector('.button');
-const colorTester = main.querySelector('.color-tester');
+const displayStylesBtn = main.querySelector('.displayStylesBtn');
+const randomBtn = main.querySelector('.randomBtn');
 
-function displayStyles() {
-  console.log(`I will eventually display the page styles`);
-}
 
 
 // creates random colors in RGB
@@ -25,8 +22,9 @@ function gradientDegree() {
 }
 
 // modifies the percentage of color break points
+// creates very abstract backgrounds...
 function colorPercentage() {
-
+   return (Math.round(Math.random() * (100 - 1 + 1)).toString());
 }
 
 // Applies the random color to the 'body'
@@ -37,8 +35,9 @@ function applyRandomColor() {
   return document.body.style.background = theGradient;
 }
 
-function changeGradientHourly() {
 
+function displayStyles() {
+  console.log(`I will eventually display the page styles`);
 }
 
 /* unfinished */
@@ -52,7 +51,7 @@ function changeGradientHourly() {
 
 
 
-// event listeners
-button.addEventListener('click', displayStyles);
+// Event Listeners
 // button.addEventListener('click', changeButtonColor);
-colorTester.addEventListener('click', applyRandomColor);
+displayStylesBtn.addEventListener('click', displayStyles);
+randomBtn.addEventListener('click', applyRandomColor);
