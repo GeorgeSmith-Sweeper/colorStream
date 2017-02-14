@@ -8,7 +8,6 @@ const randomBtn = main.querySelector('.randomBtn');
 function randomColor() {
   let letters = '01234566789ABCDEF';
   let color = '#';
-  let colorArray = ['first', 'second', 'third'];
 
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)]
@@ -37,7 +36,7 @@ function applyRandomColor() {
 
 
 function displayStyles() {
-  console.log(`I will eventually display the page styles`);
+  console.log(`I will eventually display the page styles`)
 }
 
 /* unfinished */
@@ -55,3 +54,6 @@ function displayStyles() {
 // button.addEventListener('click', changeButtonColor);
 displayStylesBtn.addEventListener('click', displayStyles);
 randomBtn.addEventListener('click', applyRandomColor);
+
+
+// figure out why addEventListener wont fire when using FireFox
