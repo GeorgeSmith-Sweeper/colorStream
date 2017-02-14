@@ -19,13 +19,20 @@ function randomColor() {
   return color;
 }
 
-function randomNumTo100() {
+// creates a random number from 1-180
+function gradientDegree() {
+  return (Math.round(Math.random() * (180 - 1) + 1).toString());
+}
+
+// modifies the percentage of color break points
+function colorPercentage() {
 
 }
+
 // Applies the random color to the 'body'
 function applyRandomColor() {
 
-  let theGradient = `linear-gradient(135deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
+  let theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
 
   return document.body.style.background = theGradient;
 }
@@ -35,17 +42,17 @@ function changeGradientHourly() {
 }
 
 /* unfinished */
-function changeButtonColor() {
-  let clicked = false;
-  if (clicked) {
-    button.style.backgroundColor = 'yellow'
-    clicked = true;
-  }
-}
+// function changeButtonColor() {
+//   let clicked = false;
+//   if (clicked) {
+//     button.style.backgroundColor = 'yellow'
+//     clicked = true;
+//   }
+// }
 
 
 
 // event listeners
 button.addEventListener('click', displayStyles);
-button.addEventListener('click', changeButtonColor);
+// button.addEventListener('click', changeButtonColor);
 colorTester.addEventListener('click', applyRandomColor);
