@@ -1,3 +1,5 @@
+'use strict';
+
 const main = document.querySelector('.main');
 const displayStylesBtn = main.querySelector('.displayStylesBtn');
 const randomBtn = main.querySelector('.randomBtn');
@@ -39,21 +41,20 @@ function displayStyles() {
   console.log(`I will eventually display the page styles`)
 }
 
-/* unfinished */
-// function changeButtonColor() {
-//   let clicked = false;
-//   if (clicked) {
-//     button.style.backgroundColor = 'yellow'
-//     clicked = true;
-//   }
-// }
 
-
+function addEvent(element, eventName, callback) {
+  if (element.addEventListener) {
+    element.addEventListener(eventName, callback, false);
+  } else if (element.attachEvent) {
+    element.attachEvent('on' + eventName, callback);
+  }
+}
 
 // Event Listeners
-// button.addEventListener('click', changeButtonColor);
 displayStylesBtn.addEventListener('click', displayStyles);
 randomBtn.addEventListener('click', applyRandomColor);
 
+/* Possible workaround for eventlisteners in Firefox */
+//addEvent(randomBtn, 'click', applyRandomColor());
 
-// figure out why addEventListener wont fire when using FireFox
+
