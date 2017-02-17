@@ -1,4 +1,3 @@
-'use strict';
 
 const main = document.querySelector('.main');
 const displayStylesBtn = main.querySelector('.displayStylesBtn');
