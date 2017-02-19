@@ -37,7 +37,14 @@ function applyRandomColor() {
 
 
 function displayStyles() {
-  console.log(`I will eventually display the page styles`)
+  "use strict";
+  var startingBackground = `linear-gradient(160deg, #c36251 0%, #2500d0 30%, #9a1e96 100%)`;
+  var domBodyBackground = document.body.style.background;
+
+  // checks if the background has been changed and displays the CSS
+  // if the background style hasn't been changed, display the original CSS
+  var backgroundStyle = `background: ${domBodyBackground ? domBodyBackground : startingBackground};`;
+  console.log(backgroundStyle);
 }
 
 
