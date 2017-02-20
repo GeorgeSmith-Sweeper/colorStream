@@ -3,7 +3,7 @@
 const main = document.querySelector('.main');
 const displayStylesBtn = main.querySelector('.displayStylesBtn');
 const randomBtn = main.querySelector('.randomBtn');
-const stylesDiv = main.querySelector('.theStylesDiv');
+const theStylesDiv = main.querySelector('.theStylesDiv');
 
 
 // creates random colors in RGB
@@ -43,7 +43,7 @@ function displayStyles() {
 
   // if the background style hasn't been changed, display the original CSS
   var backgroundStyle = `background: ${domBodyBackground ? domBodyBackground : startingBackground};`;
-  console.log(backgroundStyle);
+  return theStylesDiv.textContent = backgroundStyle;
 }
 
 
@@ -52,18 +52,3 @@ function displayStyles() {
 displayStylesBtn.addEventListener('click', displayStyles);
 randomBtn.addEventListener('click', applyRandomColor);
 
-/* Possible workaround for eventlisteners in Firefox */
-//addEvent(randomBtn, 'click', applyRandomColor());
-
-// function addEvent(element, eventName, callback) {
-//   if (element.addEventListener) {
-//     element.addEventListener(eventName, callback, false);
-//   } else if (element.attachEvent) {
-//     element.attachEvent('on' + eventName, callback);
-//   }
-// }
-
-
-//linear-gradient(2deg, rgb(198, 82, 213) 0%, rgb(186, 67, 59) 45%, rgb(126, 18, 9) 100%)
-//linear-gradient(152deg, rgb(192, 181, 10) 0%, rgb(105, 184, 154) 45%, rgb(145, 32, 90) 100%)
-//linear-gradient(97deg, rgb(72, 21, 167) 0%, rgb(200, 164, 75) 45%, rgb(157, 123, 189) 100%)

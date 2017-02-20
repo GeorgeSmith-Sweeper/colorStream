@@ -39,6 +39,12 @@ p {
   transition-duration: 0.4s;
 }
 
+.theStylesDiv {
+  padding-top: 5%;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* Sweep To Right */
 .hvr-sweep-to-right {
   display: inline-block;
