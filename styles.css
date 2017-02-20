@@ -40,6 +40,11 @@ p {
   transition-duration: 0.4s;
 }
 
+/* Controls the github star button*/
+.githubBtn {
+  padding-top: 5%;
+}
+
 .theStylesDiv {
   padding-top: 5%;
   font-size: 19px;
