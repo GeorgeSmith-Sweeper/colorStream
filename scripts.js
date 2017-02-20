@@ -38,7 +38,7 @@ function clearStylesDiv () {
 function applyRandomColor() {
   "use strict";
   var theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
-  //clearStylesDiv();
+  clearStylesDiv();
   return document.body.style.background = theGradient;
 }
 
@@ -54,6 +54,6 @@ function displayStyles() {
 }
 
 // Event Listeners
-displayStylesBtn.addEventListener('click', displayStyles, clearStylesDiv);
+displayStylesBtn.addEventListener('click', displayStyles);
 randomBtn.addEventListener('click', applyRandomColor);
 
