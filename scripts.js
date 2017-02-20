@@ -1,5 +1,7 @@
 'use strict';
 
+
+// query Selectors for page elements
 const main = document.querySelector('.main');
 const displayStylesBtn = main.querySelector('.displayStylesBtn');
 const randomBtn = main.querySelector('.randomBtn');
@@ -45,7 +47,6 @@ function displayStyles() {
   var backgroundStyle = `background: ${domBodyBackground ? domBodyBackground : startingBackground};`;
   return theStylesDiv.textContent = backgroundStyle;
 }
-
 
 
 // Event Listeners

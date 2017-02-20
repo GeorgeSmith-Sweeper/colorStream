@@ -10,7 +10,7 @@ body {
 
 span {
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
+  font-size: 60px;
   color: white;
   text-align: center;
   animation: fadein 3s;
@@ -21,13 +21,14 @@ span {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
   color: white;
   text-align: center;
 }
 
 .button {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   border: solid;
   color: white;
   margin: 15px;
@@ -41,6 +42,7 @@ p {
 
 .theStylesDiv {
   padding-top: 5%;
+  font-size: 19px;
   color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
 }
