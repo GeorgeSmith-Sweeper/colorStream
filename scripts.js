@@ -29,15 +29,20 @@ function colorPercentage() {
    return (Math.round(Math.random() * (100 - 1 + 1)).toString());
 }
 
+// will clear the displayed stylesDiv
+function clearStylesDiv () {
+  return theStylesDiv.textContent = "";
+}
+
 // Applies the random color to the 'body'
 function applyRandomColor() {
   "use strict";
   var theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
-
+  //clearStylesDiv();
   return document.body.style.background = theGradient;
 }
 
-
+// will modifiy the textContents to display the current CSS background
 function displayStyles() {
   "use strict";
   var startingBackground = `linear-gradient(160deg, #c36251 0%, #2500d0 30%, #9a1e96 100%)`;
@@ -48,8 +53,7 @@ function displayStyles() {
   return theStylesDiv.textContent = backgroundStyle;
 }
 
-
 // Event Listeners
-displayStylesBtn.addEventListener('click', displayStyles);
+displayStylesBtn.addEventListener('click', displayStyles, clearStylesDiv);
 randomBtn.addEventListener('click', applyRandomColor);
 
