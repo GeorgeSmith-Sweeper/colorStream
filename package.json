@@ -1,7 +1,7 @@
 {
   "name": "color_stream",
   "version": "1.0.0",
-  "description": "Changing tweets into clolorful blocks",
+  "description": "Creating colorful backgrounds",
   "main": "index.js",
   "scripts": {
     "test": "test"
