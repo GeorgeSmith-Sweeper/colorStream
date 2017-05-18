@@ -30,13 +30,12 @@ function colorPercentage() {
 }
 
 // will clear the displayed stylesDiv
-function clearStylesDiv () {
+function clearStylesDiv() {
   return theStylesDiv.textContent = "";
 }
 
 // Applies the random color to the 'body'
 function applyRandomColor() {
-  "use strict";
   var theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
   clearStylesDiv();
   return document.body.style.background = theGradient;
