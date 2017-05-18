@@ -37,20 +37,21 @@ function clearStylesDiv() {
 
 // Applies the random color to the 'body'
 function applyRandomColor() {
-  var theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
+  const theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
   clearStylesDiv();
-  return document.body.style.background = theGradient;
+  document.body.style.background = theGradient;
+  return document.body.style.background;
 }
 
 // will modifiy the textContents to display the current CSS background
 function displayStyles() {
-  "use strict";
-  var startingBackground = `linear-gradient(160deg, #c36251 0%, #2500d0 30%, #9a1e96 100%)`;
-  var domBodyBackground = document.body.style.background;
+  const startingBackground = 'linear-gradient(160deg, #c36251 0%, #2500d0 30%, #9a1e96 100%)';
+  const domBodyBackground = document.body.style.background;
 
   // if the background style hasn't been changed, display the original CSS
-  var backgroundStyle = `background: ${domBodyBackground ? domBodyBackground : startingBackground};`;
-  return theStylesDiv.textContent = backgroundStyle;
+  const backgroundStyle = `background: ${domBodyBackground ? domBodyBackground : startingBackground};`;
+  theStylesDiv.textContent = backgroundStyle;
+  return theStylesDiv;
 }
 
 // Event Listeners
