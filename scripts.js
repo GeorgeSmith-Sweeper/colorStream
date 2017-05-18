@@ -20,7 +20,7 @@ function randomColor() {
 
 // creates a random number from 1-180
 function gradientDegree() {
-  return (Math.round(Math.random() * (180 - 1) + 1).toString());
+  return (Math.round(Math.random() * ((180 - 1) + 1)).toString());
 }
 
 // modifies the percentage of color break points
@@ -31,7 +31,8 @@ function colorPercentage() {
 
 // will clear the displayed stylesDiv
 function clearStylesDiv() {
-  return theStylesDiv.textContent = "";
+  theStylesDiv.textContent = '';
+  return theStylesDiv;
 }
 
 // Applies the random color to the 'body'
