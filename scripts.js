@@ -11,7 +11,7 @@ const theStylesDiv = main.querySelector('.theStylesDiv');
 // creates random colors in RGB
 function randomColor() {
   const letters = '01234566789ABCDEF';
-  let color = '#';
+  var color = '#';
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
@@ -26,7 +26,7 @@ function gradientDegree() {
 // modifies the percentage of color break points
 // creates very abstract backgrounds...
 function colorPercentage() {
-   return (Math.round(Math.random() * (100 - 1 + 1)).toString());
+  return (Math.round(Math.random() * (100 - 1 + 1)).toString());
 }
 
 // will clear the displayed stylesDiv
