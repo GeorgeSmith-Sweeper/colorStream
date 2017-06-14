@@ -43,7 +43,7 @@ function applyRandomColor() {
 
 // will modifiy the textContents to display the current CSS background
 function displayStyles() {
-  const startingBackground = 'linear-gradient(160deg, #c36251 0%, #2500d0 30%, #9a1e96 100%)';
+  const startingBackground = 'linear-gradient(73deg, rgb(228, 50, 27) 0%, rgb(198, 20, 104) 45%, rgb(217, 4, 230) 100%)';
   const domBodyBackground = document.body.style.background;
 
   // if the background style hasn't been changed, display the original CSS
