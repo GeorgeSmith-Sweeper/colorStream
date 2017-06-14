@@ -1,12 +1,10 @@
 'use strict';
 
-
 // query Selectors for page elements
 const main = document.querySelector('.main');
 const displayStylesBtn = main.querySelector('.displayStylesBtn');
 const randomBtn = main.querySelector('.randomBtn');
 const theStylesDiv = main.querySelector('.theStylesDiv');
-
 
 // creates random colors in RGB
 function randomColor() {
