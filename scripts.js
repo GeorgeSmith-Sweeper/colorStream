@@ -9,8 +9,8 @@ const theStylesDiv = main.querySelector('.theStylesDiv');
 // creates random colors in RGB
 function randomColor() {
   const letters = '01234566789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
