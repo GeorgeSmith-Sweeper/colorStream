@@ -1,4 +1,4 @@
-# colorStream
+# Color Stream
 CSS Gradient background generator!
 
 
