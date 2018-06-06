@@ -7,7 +7,7 @@ const randomBtn = main.querySelector('.randomBtn');
 const theStylesDiv = main.querySelector('.theStylesDiv');
 
 // creates random colors in RGB
-function randomColor() {
+const randomColor = () => {
   const letters = '01234566789ABCDEF';
   let color = '#';
   for (let i = 0; i < 6; i++) {
@@ -17,24 +17,24 @@ function randomColor() {
 }
 
 // creates a random number from 1-180
-function gradientDegree() {
+const gradientDegree = () => {
   return (Math.round(Math.random() * ((180 - 1) + 1)).toString());
 }
 
 // modifies the percentage of color break points
 // creates very abstract backgrounds...
-function colorPercentage() {
+const colorPercentage = () => {
   return (Math.round(Math.random() * (100 - 1 + 1)).toString());
 }
 
 // will clear the displayed stylesDiv
-function clearStylesDiv() {
+const clearStylesDiv = () => {
   theStylesDiv.textContent = '';
   return theStylesDiv;
 }
 
 // Applies the random color to the 'body'
-function applyRandomColor() {
+const applyRandomColor = () => {
   const theGradient = `linear-gradient(${gradientDegree()}deg, ${randomColor()} 0%, ${randomColor()} 45%, ${randomColor()} 100%)`;
   clearStylesDiv();
   document.body.style.background = theGradient;
@@ -42,7 +42,7 @@ function applyRandomColor() {
 }
 
 // will modifiy the textContents to display the current CSS background
-function displayStyles() {
+const displayStyles = () => {
   const startingBackground = 'linear-gradient(73deg, rgb(228, 50, 27) 0%, rgb(198, 20, 104) 45%, rgb(217, 4, 230) 100%)';
   const domBodyBackground = document.body.style.background;
 
