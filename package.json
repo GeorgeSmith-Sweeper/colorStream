@@ -4,7 +4,7 @@
   "description": "Creating colorful backgrounds",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha-chrome test/test.html"
   },
   "author": "George Smith-Sweeper",
   "license": "MIT",
