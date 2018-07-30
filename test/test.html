@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Tests</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='../node_modules/mocha/mocha.css' rel='stylesheet' />
+  <script src='../node_modules/mocha/mocha.js'></script>
+  <script src='../node_modules/chai/chai.js'></script>
+</head>
+  <body>
+    <div id='mocha'></div>
+    <script>
+      expect = chai.expect;
+
+      describe('Tests', function() {
+        it('tests', function() {
+          expect(true).to.equal(true);
+        });
+      });
+
+      mocha.run();
+    </script>
+  </body>
+</html>
