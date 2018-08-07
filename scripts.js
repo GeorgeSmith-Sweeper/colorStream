@@ -14,24 +14,16 @@ const randomColor = () => {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
-}
+};
 
 // creates a random number from 1-180
-const gradientDegree = () => {
-  return (Math.round(Math.random() * ((180 - 1) + 1)).toString());
-}
-
-// modifies the percentage of color break points
-// creates very abstract backgrounds...
-const colorPercentage = () => {
-  return (Math.round(Math.random() * (100 - 1 + 1)).toString());
-}
+const gradientDegree = () => { (Math.round(Math.random() * ((180 - 1) + 1)).toString()); };
 
 // will clear the displayed stylesDiv
 const clearStylesDiv = () => {
   theStylesDiv.textContent = '';
   return theStylesDiv;
-}
+};
 
 // Applies the random color to the 'body'
 const applyRandomColor = () => {
@@ -39,7 +31,7 @@ const applyRandomColor = () => {
   clearStylesDiv();
   document.body.style.background = theGradient;
   return document.body.style.background;
-}
+};
 
 // will modifiy the textContents to display the current CSS background
 const displayStyles = () => {
@@ -50,7 +42,7 @@ const displayStyles = () => {
   const backgroundStyle = `background: ${domBodyBackground ? domBodyBackground : startingBackground};`;
   theStylesDiv.textContent = backgroundStyle;
   return theStylesDiv;
-}
+};
 
 // Event Listeners
 displayStylesBtn.addEventListener('click', displayStyles);
