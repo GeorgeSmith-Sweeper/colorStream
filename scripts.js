@@ -17,7 +17,9 @@ const randomColor = () => {
 };
 
 // creates a random number from 1-180
-const gradientDegree = () => { (Math.round(Math.random() * ((180 - 1) + 1)).toString()); };
+const gradientDegree = () => {
+  return (Math.round(Math.random() * ((180 - 1) + 1)).toString());
+};
 
 // will clear the displayed stylesDiv
 const clearStylesDiv = () => {
