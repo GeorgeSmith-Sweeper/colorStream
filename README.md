@@ -8,4 +8,4 @@ Backgrounds can be recreated by clicking the "Reveal" button to display the exac
 
 If you like this project, be sure to click the star button located on the page!
 
-Take a look [Color Stream](http://colorstream.co).
+Take a look [Color Stream](http://colorstream.design).
